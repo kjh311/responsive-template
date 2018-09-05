@@ -4,10 +4,20 @@
 
 // Bootstrap and its default variables
 @import "../bootstrap/scss/bootstrap";
+@import "border";
 
 
 
+.container-fluid{
+	@extend %color-border;
+	// height: 100px;
+	width: 100vw;
+}
 
+.pic{
+	@extend %color-border;
+	height: 200px;
+}
 
 
 

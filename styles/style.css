@@ -6353,4 +6353,22 @@ a.text-dark:focus, a.text-dark:hover {
 .invisible {
   visibility: hidden !important; }
 
+.container-fluid, .pic {
+  outline: 2px solid red; }
+  @media (min-width: 576px) {
+    .container-fluid, .pic {
+      outline: 2px solid orange; } }
+  @media (min-width: 768px) {
+    .container-fluid, .pic {
+      outline: 2px solid yellow; } }
+  @media (min-width: 992px) {
+    .container-fluid, .pic {
+      outline: 2px solid green; } }
+
+.container-fluid {
+  width: 100vw; }
+
+.pic {
+  height: 200px; }
+
 /*# sourceMappingURL=style.css.map */

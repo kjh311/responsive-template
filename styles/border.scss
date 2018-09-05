@@ -1,0 +1,12 @@
+%color-border {
+  outline: 2px solid red;
+  @include media-breakpoint-up(sm) { 
+  	outline: 2px solid orange;
+  }
+  @include media-breakpoint-up(md) { 
+  	outline: 2px solid yellow;
+  }
+  @include media-breakpoint-up(lg) { 
+  	outline: 2px solid green;
+  }
+}
