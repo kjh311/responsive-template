@@ -6381,13 +6381,19 @@ body {
     letter-spacing: 0.9px; }
   .navbar .navbar-toggler {
     right: 0;
+    outline: 0;
+    border: 0px solid black;
     top: 5px;
     position: absolute;
-    font-size: 0.7em; }
+    font-size: 0.7em;
+    background-color: black;
+    border-radius: 0;
+    height: 37px;
+    top: 0; }
 
 .awesome-div {
   background-color: #0da4b9;
-  padding: 53px 34px 32px 0px; }
+  padding: 53px 34px 34px 0px; }
   .awesome-div .awesome-text {
     font-size: 1.2em;
     letter-spacing: 1.5px;
@@ -6402,9 +6408,9 @@ body {
 
 .robinhood-div {
   background-color: #27212d;
-  padding: 35px 0px 0px 0px;
+  padding: 32px 0px 0px 0px;
   position: relative;
-  height: 80px; }
+  height: 76px; }
   .robinhood-div .robinhood-text {
     font-size: 0.65em;
     color: #9584a4;
@@ -6419,7 +6425,7 @@ body {
     .robinhood-div .robinhood-arrow .chevron-right2 {
       position: absolute;
       right: 30px;
-      top: 31px; }
+      top: 29px; }
 
 .pic-div .purple-arrow {
   background-color: #5a0fa0; }
@@ -6427,14 +6433,14 @@ body {
     height: 275px;
     width: 100%; }
 .pic-div .pic {
-  height: 275px;
+  height: 276px;
   outline: 0.5px solid rgba(255, 255, 255, 0.3);
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover; }
 .pic-div .chevron-right3 {
-  margin-top: -6px;
+  margin-top: -4px;
   font-size: 2em;
   position: relative;
   top: 50%;
@@ -6443,5 +6449,14 @@ body {
   background-image: url("/assets/bridge.jpg"); }
 .pic-div .girl {
   background-image: url("/assets/girl.jpg"); }
+
+.footer-div {
+  padding: 31px 36px 10px 36px; }
+  .footer-div .blaz-text {
+    font-size: 1.4em; }
+  .footer-div .footer-text {
+    font-size: 0.9em;
+    margin-top: 15px;
+    line-height: 22px; }
 
 /*# sourceMappingURL=style.css.map */
