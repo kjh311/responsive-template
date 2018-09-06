@@ -6381,6 +6381,7 @@ body {
     letter-spacing: 0.9px; }
   .navbar .navbar-toggler {
     right: 0;
+    top: 5px;
     position: absolute;
     font-size: 0.7em; }
 

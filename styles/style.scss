@@ -33,6 +33,16 @@ body{
 	color: white;
 }
 
+// .row {
+//   margin-right: 0;
+//   margin-left: 0;
+// }
+// .row > [class^="col-"],
+// .row > [class*=" col-"] {
+//   padding-right: 0;
+//   padding-left: 0;
+// }
+
 .navbar{
 	padding: 5px 0px 6px 18px;
 		.navbar-brand{
@@ -41,6 +51,7 @@ body{
 		}
 		.navbar-toggler{
 			right: 0;
+			top: 5px;
 			position: absolute;
 			font-size: 0.7em;
 		}
