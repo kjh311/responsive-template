@@ -6353,22 +6353,94 @@ a.text-dark:focus, a.text-dark:hover {
 .invisible {
   visibility: hidden !important; }
 
-.container-fluid, .pic {
-  outline: 2px solid red; }
-  @media (min-width: 576px) {
-    .container-fluid, .pic {
-      outline: 2px solid orange; } }
-  @media (min-width: 768px) {
-    .container-fluid, .pic {
-      outline: 2px solid yellow; } }
-  @media (min-width: 992px) {
-    .container-fluid, .pic {
-      outline: 2px solid green; } }
+.mockup {
+  z-index: 100;
+  opacity: 0.5;
+  position: absolute;
+  top: 0;
+  margin-left: auto;
+  margin-right: auto;
+  right: 0;
+  left: 0; }
+
+body {
+  font-size: 16px; }
 
 .container-fluid {
-  width: 100vw; }
+  width: 100vw;
+  padding: 0;
+  outline: 0.5px solid rgba(255, 255, 255, 0.3); }
 
-.pic {
-  height: 200px; }
+.fa {
+  color: white; }
+
+.navbar {
+  padding: 5px 0px 6px 18px; }
+  .navbar .navbar-brand {
+    font-size: 0.7em;
+    letter-spacing: 0.9px; }
+  .navbar .navbar-toggler {
+    right: 0;
+    position: absolute;
+    font-size: 0.7em; }
+
+.awesome-div {
+  background-color: #0da4b9;
+  padding: 53px 34px 32px 0px; }
+  .awesome-div .awesome-text {
+    font-size: 1.2em;
+    letter-spacing: 1.5px;
+    line-height: 22px; }
+  .awesome-div .blazrobar-text {
+    margin-top: 12px;
+    margin-left: -5px;
+    font-size: 0.7em;
+    letter-spacing: 0.7px; }
+    .awesome-div .blazrobar-text .right-arrow {
+      margin-left: 99px; }
+
+.robinhood-div {
+  background-color: #27212d;
+  padding: 35px 0px 0px 0px;
+  position: relative;
+  height: 80px; }
+  .robinhood-div .robinhood-text {
+    font-size: 0.65em;
+    color: #9584a4;
+    margin-left: -85px; }
+  .robinhood-div .robinhood-arrow {
+    position: absolute;
+    background-color: #bc3184;
+    right: 0;
+    top: 0;
+    height: 80px;
+    width: 70px; }
+    .robinhood-div .robinhood-arrow .chevron-right2 {
+      position: absolute;
+      right: 30px;
+      top: 31px; }
+
+.pic-div .purple-arrow {
+  background-color: #5a0fa0; }
+  .pic-div .purple-arrow .purple-arrow-link {
+    height: 275px;
+    width: 100%; }
+.pic-div .pic {
+  height: 275px;
+  outline: 0.5px solid rgba(255, 255, 255, 0.3);
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover; }
+.pic-div .chevron-right3 {
+  margin-top: -6px;
+  font-size: 2em;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%); }
+.pic-div .bridge {
+  background-image: url("/assets/bridge.jpg"); }
+.pic-div .girl {
+  background-image: url("/assets/girl.jpg"); }
 
 /*# sourceMappingURL=style.css.map */

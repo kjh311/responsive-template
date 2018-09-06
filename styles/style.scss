@@ -1,23 +1,128 @@
 // Your variable overrides
-// $body-bg: #000;
-// $body-color: #111;
 
 // Bootstrap and its default variables
 @import "../bootstrap/scss/bootstrap";
 @import "border";
 
+$navbar-color: #373c3f;
+$awesome-color: #0da4b9;
+$robinhood-color: #27212d;
+$robinhood-font: #9584a4;
+$pink-arrow-color: #bc3184;
+$purple-arrow-color: #5a0fa0;
 
+
+body{
+	font-size: 16px;
+}
 
 .container-fluid{
-	@extend %color-border;
-	// height: 100px;
+	// @extend %color-border;
 	width: 100vw;
+	padding: 0;
+	outline: 0.5px solid rgba(255,255,255, 0.3);
+
 }
 
-.pic{
-	@extend %color-border;
-	height: 200px;
+// .pic{
+// 	// @extend %color-border;
+// 	height: 200px;
+// }
+
+.fa{
+	color: white;
 }
+
+.navbar{
+	padding: 5px 0px 6px 18px;
+		.navbar-brand{
+			font-size: 0.7em;
+			letter-spacing: 0.9px;
+		}
+		.navbar-toggler{
+			right: 0;
+			position: absolute;
+			font-size: 0.7em;
+		}
+}
+
+.awesome-div{
+	background-color: $awesome-color;
+	padding: 53px 34px 32px 0px;
+		.awesome-text{
+			font-size: 1.2em;
+			letter-spacing: 1.5px;
+			line-height: 22px;
+		}
+		.blazrobar-text{
+			margin-top: 12px;
+			margin-left: -5px;
+			font-size: 0.7em;
+			letter-spacing: 0.7px;
+				.right-arrow{
+					margin-left: 99px;
+				}
+		}
+}
+
+.robinhood-div{
+	background-color: $robinhood-color;
+	padding: 35px 0px 0px 0px;
+	position: relative;
+	height: 80px;
+		.robinhood-text{
+			font-size: 0.65em;
+			color: $robinhood-font;
+			margin-left: -85px;
+		}
+		.robinhood-arrow{
+			position: absolute;
+			background-color: $pink-arrow-color;
+			right: 0;
+			top: 0;
+			height: 80px;
+			width: 70px;
+				.chevron-right2{
+					position: absolute;
+					right: 30px;
+					// color: white;
+					top: 31px;
+				}
+		}
+}
+
+.pic-div{
+		.purple-arrow{
+			background-color: $purple-arrow-color;
+			.purple-arrow-link {
+				height: 275px;
+				width: 100%;
+			}
+		}
+		.pic{
+			height: 275px;
+			outline: 0.5px solid rgba(255,255,255, 0.3);
+			-webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+		}
+		.chevron-right3{
+			margin-top: -6px;
+			font-size: 2em;
+			position: relative;
+			top: 50%;
+			transform: translateY(-50%);
+		}
+		.bridge{
+			background-image: url("/assets/bridge.jpg");
+		}
+		.girl{
+			background-image: url("/assets/girl.jpg");
+		}
+}
+
+
 
 
 
