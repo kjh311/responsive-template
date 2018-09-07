@@ -6353,6 +6353,18 @@ a.text-dark:focus, a.text-dark:hover {
 .invisible {
   visibility: hidden !important; }
 
+.container-fluid {
+  outline: 2px solid red; }
+  @media (min-width: 576px) {
+    .container-fluid {
+      outline: 2px solid orange; } }
+  @media (min-width: 768px) {
+    .container-fluid {
+      outline: 2px solid yellow; } }
+  @media (min-width: 992px) {
+    .container-fluid {
+      outline: 2px solid green; } }
+
 .mockup {
   z-index: 100;
   opacity: 0.5;
@@ -6368,17 +6380,23 @@ body {
 
 .container-fluid {
   width: 100vw;
-  padding: 0;
-  outline: 0.5px solid rgba(255, 255, 255, 0.3); }
+  padding: 0; }
 
 .fa {
   color: white; }
 
 .navbar {
   padding: 5px 0px 6px 18px; }
+  @media (min-width: 576px) {
+    .navbar {
+      padding: 14px 0px 15px 38px; } }
   .navbar .navbar-brand {
     font-size: 0.7em;
     letter-spacing: 0.9px; }
+    @media (min-width: 576px) {
+      .navbar .navbar-brand {
+        font-size: 1.5em;
+        letter-spacing: 1.7px; } }
   .navbar .navbar-toggler {
     right: 0;
     outline: 0;
@@ -6390,14 +6408,28 @@ body {
     border-radius: 0;
     height: 37px;
     top: 0; }
+    @media (min-width: 576px) {
+      .navbar .navbar-toggler {
+        height: 75px;
+        width: 82px; }
+        .navbar .navbar-toggler .navbar-toggler-icon {
+          font-size: 2.1em; } }
 
 .awesome-div {
   background-color: #0da4b9;
   padding: 53px 34px 34px 0px; }
+  @media (min-width: 576px) {
+    .awesome-div {
+      padding: 107px 75px 81px 0px; } }
   .awesome-div .awesome-text {
     font-size: 1.2em;
     letter-spacing: 1.5px;
     line-height: 22px; }
+    @media (min-width: 576px) {
+      .awesome-div .awesome-text {
+        font-size: 2.5em;
+        line-height: 40px;
+        letter-spacing: 3.5px; } }
   .awesome-div .blazrobar-text {
     margin-top: 12px;
     margin-left: -5px;
@@ -6405,16 +6437,33 @@ body {
     letter-spacing: 0.7px; }
     .awesome-div .blazrobar-text .right-arrow {
       margin-left: 99px; }
+    @media (min-width: 576px) {
+      .awesome-div .blazrobar-text {
+        font-size: 1.5em;
+        margin-left: -7px;
+        margin-top: 27px;
+        letter-spacing: 1.3px; }
+        .awesome-div .blazrobar-text .right-arrow {
+          margin-left: 200px; } }
 
 .robinhood-div {
   background-color: #27212d;
   padding: 32px 0px 0px 0px;
   position: relative;
   height: 76px; }
+  @media (min-width: 576px) {
+    .robinhood-div {
+      height: 151px; } }
   .robinhood-div .robinhood-text {
     font-size: 0.65em;
     color: #9584a4;
     margin-left: -85px; }
+    @media (min-width: 576px) {
+      .robinhood-div .robinhood-text {
+        font-size: 1.3em;
+        margin-left: -172px;
+        margin-top: 30px;
+        letter-spacing: 1px; } }
   .robinhood-div .robinhood-arrow {
     position: absolute;
     background-color: #bc3184;
@@ -6426,12 +6475,24 @@ body {
       position: absolute;
       right: 30px;
       top: 29px; }
+    @media (min-width: 576px) {
+      .robinhood-div .robinhood-arrow {
+        width: 141px;
+        height: 151px; }
+        .robinhood-div .robinhood-arrow .chevron-right2 {
+          right: 65px;
+          top: 60px;
+          font-size: 1.5em; } }
 
 .pic-div .purple-arrow {
   background-color: #5a0fa0; }
   .pic-div .purple-arrow .purple-arrow-link {
     height: 275px;
     width: 100%; }
+    @media (min-width: 576px) {
+      .pic-div .purple-arrow .purple-arrow-link {
+        font-size: 1.8em;
+        margin-top: -10px; } }
 .pic-div .pic {
   height: 276px;
   outline: 0.5px solid rgba(255, 255, 255, 0.3);
@@ -6439,6 +6500,9 @@ body {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover; }
+  @media (min-width: 576px) {
+    .pic-div .pic {
+      height: 553px; } }
 .pic-div .chevron-right3 {
   margin-top: -4px;
   font-size: 2em;
@@ -6458,5 +6522,15 @@ body {
     font-size: 0.9em;
     margin-top: 15px;
     line-height: 22px; }
+  @media (min-width: 576px) {
+    .footer-div {
+      padding: 68px 74px 10px 74px; }
+      .footer-div .blaz-text {
+        font-size: 1.8em;
+        letter-spacing: 3.2px; }
+      .footer-div .footer-text {
+        font-size: 1.5em;
+        margin-top: 38px;
+        line-height: 44px; } }
 
 /*# sourceMappingURL=style.css.map */
