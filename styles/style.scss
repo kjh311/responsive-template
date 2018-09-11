@@ -1,5 +1,4 @@
 // Your variable overrides
-
 // Bootstrap and its default variables
 @import "../bootstrap/scss/bootstrap";
 @import "border";
@@ -12,202 +11,299 @@ $pink-arrow-color: #bc3184;
 $purple-arrow-color: #5a0fa0;
 
 
-body{
-	font-size: 16px;
+body {
+    font-size: 16px;
 }
 
-.container-fluid{
-	@extend %color-border;
-	width: 100vw;
-	padding: 0;
-	// outline: 0.5px solid rgba(255,255,255, 0.3);
-
+.container-fluid {
+    // @extend %color-border;
+    width: 100vw;
+    padding: 0; 
+    // outline: 0.5px solid rgba(255,255,255, 0.3);
 }
 
-.fa{
-	color: white;
-}
-
-
-.navbar{
-	padding: 5px 0px 6px 18px;
-		@include media-breakpoint-up(sm) {
-			padding: 14px 0px 15px 38px;
-		}
-		.navbar-brand{
-			font-size: 0.7em;
-			letter-spacing: 0.9px;
-				@include media-breakpoint-up(sm) {
-					font-size: 1.5em;
-					letter-spacing: 1.7px;
-				}
-		}
-		.navbar-toggler{
-			right: 0;
-			outline: 0;
-			border: 0px solid black;
-			top: 5px;
-			position: absolute;
-			font-size: 0.7em;
-			background-color: black;
-			border-radius: 0;
-			height: 37px;
-			top: 0;
-				@include media-breakpoint-up(sm) {
-					height: 75px;
-					width: 82px;
-						.navbar-toggler-icon{
-							font-size: 2.1em;
-						}
-				}
-		}
-}
-
-.awesome-div{
-	background-color: $awesome-color;
-	padding: 53px 34px 34px 0px;
-		@include media-breakpoint-up(sm) {
-			padding: 107px 75px 81px 0px;
-		}
-		.awesome-text{
-			font-size: 1.2em;
-			letter-spacing: 1.5px;
-			line-height: 22px;
-				@include media-breakpoint-up(sm) {
-					font-size: 2.5em;
-					line-height: 40px;
-					letter-spacing: 3.5px;
-				}
-		}
-		.blazrobar-text{
-			margin-top: 12px;
-			margin-left: -5px;
-			font-size: 0.7em;
-			letter-spacing: 0.7px;
-				.right-arrow{
-					margin-left: 99px;
-				}
-			@include media-breakpoint-up(sm) {
-				font-size: 1.5em;
-				margin-left: -7px;
-				margin-top: 27px;
-				letter-spacing: 1.3px;
-					.right-arrow{
-						margin-left: 200px;
-					}
-			}
-		}
-}
-
-.robinhood-div{
-	background-color: $robinhood-color;
-	padding: 32px 0px 0px 0px;
-	position: relative;
-	height: 76px;
-		@include media-breakpoint-up(sm) {
-			height: 151px;
-		}
-		.robinhood-text{
-			font-size: 0.65em;
-			color: $robinhood-font;
-			margin-left: -85px;
-				@include media-breakpoint-up(sm) {
-					font-size: 1.3em;
-					margin-left: -172px;
-					margin-top: 30px;
-					letter-spacing: 1px;
-				}
-		}
-		.robinhood-arrow{
-			position: absolute;
-			background-color: $pink-arrow-color;
-			right: 0;
-			top: 0;
-			height: 80px;
-			width: 70px;
-				.chevron-right2{
-					position: absolute;
-					right: 30px;
-					top: 29px;
-				}
-				@include media-breakpoint-up(sm) {
-					width: 141px;
-					height: 151px;
-						.chevron-right2{
-							right: 65px;
-							top: 60px;
-							font-size: 1.5em;
-						}
-				}
-		}
-}
-
-.pic-div{
-		.purple-arrow{
-			background-color: $purple-arrow-color;
-			.purple-arrow-link {
-				height: 275px;
-				width: 100%;
-					@include media-breakpoint-up(sm) {
-						font-size: 1.8em;
-						margin-top: -10px;
-					}
-			}
-		}
-		.pic{
-			height: 276px;
-			outline: 0.5px solid rgba(255,255,255, 0.3);
-			-webkit-background-size: cover;
-			-moz-background-size: cover;
-			-o-background-size: cover;
-			background-size: cover;
-				@include media-breakpoint-up(sm) {
-					height: 553px;
-				}
-		}
-		.chevron-right3{
-			margin-top: -4px;
-			font-size: 2em;
-			position: relative;
-			top: 50%;
-			transform: translateY(-50%);
-		}
-		.bridge{
-			background-image: url("/assets/bridge.jpg");
-		}
-		.girl{
-			background-image: url("/assets/girl.jpg");
-		}
-}
-
-.footer-div{
-	padding: 31px 36px 10px 36px;
-		.blaz-text{
-			font-size: 1.4em;
-		}
-		.footer-text{
-			font-size: 0.9em;
-			margin-top: 15px;
-			line-height: 22px;
-		}
-		@include media-breakpoint-up(sm) {
-			padding: 68px 74px 10px 74px;
-				.blaz-text{
-					font-size: 1.8em;
-					letter-spacing: 3.2px;
-				}
-				.footer-text{
-					font-size: 1.5em;
-					margin-top: 38px;
-					line-height: 44px;
-				}
-		}
+.fa {
+    color: white;
 }
 
 
+.navbar {
+    padding: 5px 0px 6px 18px;
+	    @include media-breakpoint-up(sm) {
+	        padding: 14px 0px 15px 38px;
+	    }
+	    @include media-breakpoint-up(md) {
+	        padding: 31px 0px 27px 28px;
+	    }
+    .nav-item{
+    	padding-left: 18px;
+    	font-size: 0.95em;
+    }
+    .navbar-brand {
+        font-size: 0.7em;
+        letter-spacing: 0.9px;
+        @include media-breakpoint-up(sm) {
+            font-size: 1.5em;
+            letter-spacing: 1.7px;
+        }
+    }
+    .navbar-toggler {
+        background-color: black;
+        border-radius: 0;
+        border: 0px solid black;
+        font-size: 0.7em;
+        height: 37px;
+        outline: 0;
+        position: absolute;
+        right: 0;
+        top: 0;
+        @include media-breakpoint-up(sm) {
+            height: 75px;
+            width: 82px;
+            .navbar-toggler-icon {
+                font-size: 2.1em;
+            }
+        }
+    }
+}
 
+.awesome-div {
+    background-color: $awesome-color;
+    padding: 53px 34px 34px 0px;
+	    @include media-breakpoint-up(sm) {
+	        padding: 107px 75px 81px 0px;
+	    }
+	    @include media-breakpoint-up(md) {
+	        padding: 185px 75px 134px 0px;
+	    }
+	    @include media-breakpoint-up(lg) {
+	        padding: 195px 75px 141px 0px;
+	    }
+    .awesome-text {
+        font-size: 1.2em;
+        letter-spacing: 1.5px;
+        line-height: 22px;
+        @include media-breakpoint-up(sm) {
+            font-size: 2.5em;
+            line-height: 40px;
+            letter-spacing: 3.5px;
+        }
+        @include media-breakpoint-up(md) {
+            font-size: 4em;
+            line-height: 60px;
+            margin-left: 40px;
+            letter-spacing: 3.7px;
+        }
+        @include media-breakpoint-up(lg) {
+            line-height: 65px;
+            margin-left: -50px;
+            letter-spacing: 5.5px;
+        }
+    }
+    .blazrobar-text {
+        font-size: 0.7em;
+        letter-spacing: 0.7px;
+        margin-left: -5px;
+        margin-top: 12px;
+        .right-arrow {
+            margin-left: 99px;
+        }
+        @include media-breakpoint-up(sm) {
+            font-size: 1.5em;
+            letter-spacing: 1.3px;
+            margin: 27px 0px 0px -7px;
+            .right-arrow {
+                margin-left: 200px;
+            }
+        }
+        @include media-breakpoint-up(md) {
+            font-size: 2.2em;
+            letter-spacing: 2.7px;
+            margin: 44px 0px 0px 0px;
+            .right-arrow {
+                margin-left: 213px;
+                font-size: 0.8em;
+            }
+        }
+        @include media-breakpoint-up(lg) {
+            letter-spacing: 3.7px;
+            margin: 44px 0px 0px -55px;
+            .right-arrow {
+                margin-left: 326px;
+            }
+        }
+    }
+}
 
+.robinhood-div {
+    background-color: $robinhood-color;
+    height: 76px;
+    padding: 32px 0px 0px 0px;
+    position: relative;
+    @include media-breakpoint-up(sm) {
+        height: 151px;
+    }
+    @include media-breakpoint-up(md) {
+        height: 233px;
+    }
+    @include media-breakpoint-up(lg) {
+        height: 246px;
+    }
+    .robinhood-text {
+        font-size: 0.65em;
+        color: $robinhood-font;
+        margin-left: -85px;
+        @include media-breakpoint-up(sm) {
+            font-size: 1.3em;
+            letter-spacing: 1px;
+            margin: 30px 0px 0px -172px;
+        }
+        @include media-breakpoint-up(md) {
+            font-size: 2em;
+            letter-spacing: 1.6px;
+            margin: 62px 0px 0px -217px;
+        }
+        @include media-breakpoint-up(lg) {
+            letter-spacing: 2.3px;
+            margin: 66px 0px 0px -277px;
+        }
+    }
+    .robinhood-arrow {
+        background-color: $pink-arrow-color;
+        height: 80px;
+        position: absolute;
+        right: 0;
+        top: 0;
+        width: 70px;
+        .chevron-right2 {
+            position: absolute;
+            right: 30px;
+            top: 29px;
+        }
+        @include media-breakpoint-up(sm) {
+            width: 141px;
+            height: 151px;
+            .chevron-right2 {
+                right: 65px;
+                top: 60px;
+                font-size: 1.5em;
+            }
+        }
+        @include media-breakpoint-up(md) {
+            width: 218px;
+            height: 234px;
+            .chevron-right2 {
+                right: 100px;
+                top: 95px;
+                font-size: 2.3em;
+            }
+        }
+        @include media-breakpoint-up(lg) {
+            width: 228px;
+            height: 250px;
+            .chevron-right2 {
+                right: 105px;
+                top: 100px;
+                font-size: 2.5em;
+            }
+        }
+    }
+}
 
+.pic-div {
+    .purple-arrow {
+        background-color: $purple-arrow-color;
+        .purple-arrow-link {
+            height: 275px;
+            width: 100%;
+            @include media-breakpoint-up(sm) {
+                font-size: 1.8em;
+                margin-top: -10px;
+            }
+            @include media-breakpoint-up(md) {
+                font-size: 1em;
+                margin-top: -5px;
+            }
+        }
+    }
+    .pic {
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        -webkit-background-size: cover;
+        background-size: cover;
+        height: 276px;
+        outline: 0.5px solid rgba(255, 255, 255, 0.3);
+        @include media-breakpoint-up(sm) {
+            height: 553px;
+        }
+        @include media-breakpoint-up(md) {
+            height: 283px;
+        }
+        @include media-breakpoint-up(lg) {
+            height: 293px;
+        }
+    }
+    .chevron-right3 {
+        font-size: 2em;
+        margin-top: -4px;
+        position: relative;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+    .bridge {
+        background-image: url("/assets/bridge.jpg");
+    }
+    .girl {
+        background-image: url("/assets/girl.jpg");
+    }
+}
 
-
-
+.footer-div {
+    padding: 31px 36px 0px 36px;
+    .blaz-text {
+        font-size: 1.4em;
+    }
+    .footer-text {
+        font-size: 0.9em;
+        margin-top: 15px;
+        line-height: 22px;
+        padding-bottom: 30px;
+    }
+    @include media-breakpoint-up(sm) {
+        padding: 68px 74px 10px 74px;
+        .blaz-text {
+            font-size: 1.8em;
+            letter-spacing: 3.2px;
+        }
+        .footer-text {
+            font-size: 1.5em;
+            margin-top: 38px;
+            line-height: 44px;
+        }
+    }
+    @include media-breakpoint-up(md) {
+        padding: 63px 74px 10px 80px;
+        .blaz-text {
+            font-size: 1.8em;
+            letter-spacing: 2.9px;
+        }
+        .footer-text {
+            font-size: 0.9em;
+            margin-top: 20px;
+            line-height: 26px;
+            letter-spacing: 0.5px;
+        }
+        .first-footer-paragraph{
+        	padding-right: 30px;
+        }
+        .second-footer-paragraph{
+        	padding: 0px 30px 0px 30px;
+        }
+    }
+    @include media-breakpoint-up(lg) {
+        padding: 50px 74px 10px 80px;
+        .blaz-text {
+            letter-spacing: 3.1px;
+        }
+    }
+}
